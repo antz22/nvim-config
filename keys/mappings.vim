@@ -17,8 +17,7 @@ inoremap <c-u> <ESC>viwUi
 nnoremap <c-u> viwU<Esc>
 
 " TAB in general mode will move to text buffer
-nnoremap <TAB> :bnext<CR>
-" SHIFT-TAB will go back
+nnoremap <TAB> :bnext<CR> " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
 " Close file 
 nnoremap <M-w> :bd<CR>
@@ -57,6 +56,10 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 map <C-t> :NERDTreeToggle<CR>
 let g:NERDTreeMinimalUI=1
 
+" Saving folds
+nnoremap <A-s> mkview
+nnoremap <A-l> loadview
+
 
 augroup compileandrun
   autocmd!
@@ -65,15 +68,15 @@ augroup compileandrun
   autocmd filetype cpp nnoremap <f5> :w <bar> !g++ -Wall -Wextra -std=c++11 % <cr> :vnew <bar> :te ./"a.out" <cr>
   autocmd filetype cpp nnoremap <f6> :vnew <bar> :te ./"a.out" <cr>
   autocmd filetype c nnoremap <f5> :w <bar> !make %:r && ./%:r <cr>
-  autocmd filetype java nnoremap <f5> :w <bar> !javac % && java %:r <cr>
-  autocmd filetype java nnoremap <f6> :w <bar> !javac % <cr> :vsplit <cr> :term java %:r <cr>
+  autocmd filetype java nnoremap <f5> :w <bar> !javac % <cr>
+  "autocmd filetype java nnoremap <f6> :w <bar> !javac % <cr> :vsplit <cr> :term java %:r <cr>
 augroup END
 
 
-"augroup remember_folds
-  "autocmd!
-  "autocmd BufWinLeave * mkview
-  "autocmd BufWinEnter * silent! loadview
-"augroup END
+augroup remember_folds
+  autocmd!
+  autocmd BufWinLeave *.txt mkview
+  autocmd BufWinEnter *.txt silent! loadview
+augroup END
 
 

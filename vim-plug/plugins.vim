@@ -44,5 +44,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'christianchiarulli/nvcode-color-schemes.vim' 
     " Syntax highlighting
     Plug 'sheerun/vim-polyglot'
+    " Zen mode
+    Plug 'junegunn/goyo.vim'
+    " Notes
+    Plug 'vimwiki/vimwiki'
+    Plug 'xolox/vim-notes'
+    Plug 'xolox/vim-misc'
+    " HTML
+    Plug 'mattn/emmet-vim' 
+
 
 call plug#end()
