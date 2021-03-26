@@ -64,7 +64,7 @@ nnoremap <A-l> loadview
 augroup compileandrun
   autocmd!
   autocmd filetype python nnoremap <f5> :w <cr> :vsplit <cr> :term python3 % <cr>
-  autocmd filetype cpp nnoremap <f4> :w <bar> exec '!g++'.shellescape('%').' -Wall Wextra -g -o '.shellescape('%:r')<cr>
+  autocmd filetype cpp nnoremap <f4> :w <bar> exec '!g++ '.shellescape('%').' -Wall -Wextra -g -o '.shellescape('%:r')<cr>
   autocmd filetype cpp nnoremap <f5> :w <bar> !g++ -Wall -Wextra -std=c++11 % <cr> :vnew <bar> :te ./"a.out" <cr>
   autocmd filetype cpp nnoremap <f6> :vnew <bar> :te ./"a.out" <cr>
   autocmd filetype c nnoremap <f5> :w <bar> !make %:r && ./%:r <cr>

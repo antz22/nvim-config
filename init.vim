@@ -13,11 +13,18 @@ source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim
 
 " Aesthetics...
-source $HOME/.config/nvim/themes/onedark.vim
-"source $HOME/.config/nvim/themes/nvcode.vim
+source $HOME/.config/nvim/themes/theme.vim
 source $HOME/.config/nvim/themes/airline.vim
+"source $HOME/.config/nvim/themes/nvcode.vim
+"source $HOME/.config/nvim/themes/onedark.vim
 
 " Misc
-lua require'plug-colorizer'
-luafile $HOME/.config/nvim/lua/treesitter.lua
+luafile $HOME/.config/nvim/lua/plugins/plug-colorizer.lua
+luafile $HOME/.config/nvim/lua/plugins/nvim-tree.lua
+"lua require'onedark'.setup {}
+
+" LSP
+luafile $HOME/.config/nvim/lua/plugins/treesitter.lua
+"luafile $HOME/.config/nvim/lua/plugins/compe-config.lua
+"source ~/.config/nvim/plug-config/lsp-config.vim
 
