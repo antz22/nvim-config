@@ -55,11 +55,20 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 " Plugins
 map <C-t> :NERDTreeToggle<CR>
 let g:NERDTreeMinimalUI=1
+map <C-u> :UndotreeToggle<CR>
+
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 
 " Saving folds
 nnoremap <A-s> mkview
 nnoremap <A-l> loadview
 
+" Saving sessions
+nmap <Leader>ss :<C-u>SessionSave<CR>
+nmap <Leader>sl :<C-u>SessionLoad<CR>
 
 augroup compileandrun
   autocmd!

@@ -18,3 +18,7 @@ set showtabline=2
 
 " We don't need to see things like -- INSERT -- anymore
 set noshowmode
+
+" dashboard
+"let g:airline#extensions#tabline#enabled = 1
+"autocmd FileType dashboard let g:airline#extensions#tabline#enabled = 0 | autocmd WinLeave <buffer> let g:airline#extensions#tabline#enabled = 1

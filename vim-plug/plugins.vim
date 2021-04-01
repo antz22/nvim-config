@@ -8,15 +8,17 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " Better Syntax Support
+    """" Highlighting and syntax 
+
     Plug 'sheerun/vim-polyglot'
-    " File Explorer
-    Plug 'scrooloose/NERDTree'
-    Plug 'kyazdani42/nvim-tree.lua'
-    Plug 'kyazdani42/nvim-web-devicons'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-    " Themes
+
+    " Treesitter for Java
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
+
+    """" Themes
+
     Plug 'joshdick/onedark.vim'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
@@ -29,6 +31,18 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'kaicataldo/material.vim'
     "Plug 'lukas-reineke/onedark.nvim'
 
+    " Fonts and icons
+    Plug 'ryanoasis/vim-devicons'
+
+    " Colorizer
+    Plug 'norcalli/nvim-colorizer.lua' 
+    " Rainbow
+    Plug 'junegunn/rainbow_parentheses.vim' 
+    " Color schemes
+    Plug 'christianchiarulli/nvcode-color-schemes.vim' 
+
+    """" LSP
+
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " LSP
@@ -36,30 +50,25 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'hrsh7th/nvim-compe'
     Plug 'kabouzeid/nvim-lspinstall'
 
+    " Ranger
+    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}    
+
+    """" Productivity 
+
     " Fuzzy file finding
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
+    " Telescope
+    Plug 'nvim-lua/popup.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
     " Project management
-    Plug 'mhinz/vim-startify'    
+    "Plug 'mhinz/vim-startify'    
+    Plug 'glepnir/dashboard-nvim'
     " Snippets
     Plug 'honza/vim-snippets'
     " Commenting
     Plug 'preservim/nerdcommenter'
-    " Fonts and icons
-    Plug 'ryanoasis/vim-devicons'
-    " Ranger
-    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}    
-    " Colorizer
-    Plug 'norcalli/nvim-colorizer.lua' 
-    " Rainbow
-    Plug 'junegunn/rainbow_parentheses.vim' 
-    " Treesitter for Java
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
-    " Color schemes
-    Plug 'christianchiarulli/nvcode-color-schemes.vim' 
-    " Syntax highlighting
-    Plug 'sheerun/vim-polyglot'
     " Zen mode
     Plug 'junegunn/goyo.vim'
     " Notes
@@ -68,8 +77,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'xolox/vim-misc'
     " HTML
     Plug 'mattn/emmet-vim' 
+    " File Explorer
+    Plug 'scrooloose/NERDTree'
+    Plug 'kyazdani42/nvim-tree.lua'
+    Plug 'kyazdani42/nvim-web-devicons'
 
     Plug 'lukas-reineke/indent-blankline.nvim', {'branch': 'lua'}
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'lewis6991/gitsigns.nvim'
+
+    " Undo Tree
+    Plug 'mbbill/undotree'
 
 
 call plug#end()

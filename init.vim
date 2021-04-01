@@ -3,10 +3,12 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
-source $HOME/.config/nvim/plug-config/start-screen.vim
+"source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
+source $HOME/.config/nvim/plug-config/indentLine.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/vim-notes.vim
+source $HOME/.config/nvim/plug-config/undo.vim
 
 " General
 source $HOME/.config/nvim/general/settings.vim
@@ -21,6 +23,9 @@ source $HOME/.config/nvim/themes/airline.vim
 " Misc
 luafile $HOME/.config/nvim/lua/plugins/plug-colorizer.lua
 luafile $HOME/.config/nvim/lua/plugins/nvim-tree.lua
+luafile $HOME/.config/nvim/lua/plugins/gitsigns.lua
+luafile $HOME/.config/nvim/lua/plugins/nv-telescope.lua
+luafile $HOME/.config/nvim/lua/plugins/dashboard.lua
 "lua require'onedark'.setup {}
 
 " LSP
