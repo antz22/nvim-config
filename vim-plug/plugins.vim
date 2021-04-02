@@ -20,10 +20,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     """" Themes
 
     Plug 'joshdick/onedark.vim'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+    "Plug 'vim-airline/vim-airline'
+    "Plug 'vim-airline/vim-airline-themes'
 
-    Plug 'ayu-theme/ayu-vim'
+    "Plug 'ayu-theme/ayu-vim'
     "Plug 'nanotech/jellybeans.vim'
     "Plug 'morhetz/gruvbox'
     "Plug 'sickill/vim-monokai'
@@ -41,13 +41,20 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Color schemes
     Plug 'christianchiarulli/nvcode-color-schemes.vim' 
 
+    " Status line + tabs
+    Plug 'romgrk/barbar.nvim'
+    "Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+
+    Plug 'hoob3rt/lualine.nvim'
+
+
     """" LSP
 
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " LSP
     Plug 'neovim/nvim-lspconfig'
-    "Plug 'hrsh7th/nvim-compe'
+    Plug 'hrsh7th/nvim-compe'
     Plug 'kabouzeid/nvim-lspinstall'
 
     " Ranger
@@ -56,8 +63,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     """" Productivity 
 
     " Fuzzy file finding
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
+    "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    "Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
     " Telescope
     Plug 'nvim-lua/popup.nvim'
@@ -65,6 +72,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Project management
     "Plug 'mhinz/vim-startify'    
     Plug 'glepnir/dashboard-nvim'
+    "Plug 'ChristianChiarulli/dashboard-nvim'
     " Snippets
     Plug 'honza/vim-snippets'
     " Commenting

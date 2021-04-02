@@ -6,6 +6,7 @@ syntax enable                           " Enables syntax highlighing
 
 set nu rnu
 set colorcolumn=99999                   " For indentblankline plugin, quick fix to get rid of blank space highlighting
+set noshowmode
 
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
