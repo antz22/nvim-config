@@ -33,7 +33,7 @@ luafile $HOME/.config/nvim/lua/plugins/dashboard.lua
 "lua require'onedark'.setup {}
 
 " LSP
-luafile $HOME/.config/nvim/lua/plugins/treesitter.lua
+"luafile $HOME/.config/nvim/lua/plugins/treesitter.lua
 "luafile $HOME/.config/nvim/lua/lsp/python-ls.lua
 "luafile $HOME/.config/nvim/lua/plugins/compe-config.lua
 "source ~/.config/nvim/plug-config/lsp-config.vim
