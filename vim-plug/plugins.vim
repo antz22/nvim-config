@@ -20,8 +20,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     """" Themes
 
     Plug 'joshdick/onedark.vim'
-    "Plug 'vim-airline/vim-airline'
-    "Plug 'vim-airline/vim-airline-themes'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 
     "Plug 'ayu-theme/ayu-vim'
     "Plug 'nanotech/jellybeans.vim'
@@ -45,7 +45,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'romgrk/barbar.nvim'
     "Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 
-    Plug 'hoob3rt/lualine.nvim'
+    "Plug 'hoob3rt/lualine.nvim'
 
 
     """" LSP
@@ -53,9 +53,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " LSP
-    Plug 'neovim/nvim-lspconfig'
-    Plug 'hrsh7th/nvim-compe'
-    Plug 'kabouzeid/nvim-lspinstall'
+    "Plug 'neovim/nvim-lspconfig'
+    "Plug 'hrsh7th/nvim-compe'
+    "Plug 'kabouzeid/nvim-lspinstall'
 
     " Ranger
     Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}    

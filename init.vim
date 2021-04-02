@@ -16,7 +16,7 @@ source $HOME/.config/nvim/keys/mappings.vim
 
 " Aesthetics...
 source $HOME/.config/nvim/themes/theme.vim
-"source $HOME/.config/nvim/themes/airline.vim
+source $HOME/.config/nvim/themes/airline.vim
 "source $HOME/.config/nvim/themes/nvcode.vim
 "source $HOME/.config/nvim/themes/onedark.vim
 
@@ -26,7 +26,7 @@ luafile $HOME/.config/nvim/lua/plugins/nvim-tree.lua
 luafile $HOME/.config/nvim/lua/plugins/gitsigns.lua
 luafile $HOME/.config/nvim/lua/plugins/nv-telescope.lua
 luafile $HOME/.config/nvim/lua/plugins/dashboard.lua
-luafile $HOME/.config/nvim/lua/plugins/lualine.lua
+"luafile $HOME/.config/nvim/lua/plugins/lualine.lua
 
 "luafile $HOME/.config/nvim/lua/plugins/galaxyline.lua
 "luafile $HOME/.config/nvim/lua/plugins/eviline.lua
@@ -34,7 +34,7 @@ luafile $HOME/.config/nvim/lua/plugins/lualine.lua
 
 " LSP
 luafile $HOME/.config/nvim/lua/plugins/treesitter.lua
-luafile $HOME/.config/nvim/lua/lsp/python-ls.lua
-luafile $HOME/.config/nvim/lua/plugins/compe-config.lua
-source ~/.config/nvim/plug-config/lsp-config.vim
+"luafile $HOME/.config/nvim/lua/lsp/python-ls.lua
+"luafile $HOME/.config/nvim/lua/plugins/compe-config.lua
+"source ~/.config/nvim/plug-config/lsp-config.vim
 
