@@ -14,10 +14,10 @@
   "python.linting.pylintEnabled": true,
   "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
   // django config
-  "python.linting.pylintArgs": [
-      "--load-plugins=pylint_django",
-      "--load-plugins=pylint_django.checkers.migrations",
-      "--errors-only" ],
+  //"python.linting.pylintArgs": [
+      //"--load-plugins=pylint_django",
+      //"--load-plugins=pylint_django.checkers.migrations",
+      //"--errors-only" ],
   // explorer
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,

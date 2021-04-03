@@ -20,8 +20,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     """" Themes
 
     Plug 'joshdick/onedark.vim'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+    "Plug 'vim-airline/vim-airline'
+    "Plug 'vim-airline/vim-airline-themes'
 
     "Plug 'ayu-theme/ayu-vim'
     "Plug 'nanotech/jellybeans.vim'
@@ -43,7 +43,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Status line + tabs
     Plug 'romgrk/barbar.nvim'
-    "Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+    Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 
     "Plug 'hoob3rt/lualine.nvim'
 
