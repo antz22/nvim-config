@@ -28,7 +28,7 @@ luafile $HOME/.config/nvim/lua/plugins/nv-telescope.lua
 luafile $HOME/.config/nvim/lua/plugins/dashboard.lua
 "luafile $HOME/.config/nvim/lua/plugins/lualine.lua
 
-"luafile $HOME/.config/nvim/lua/plugins/galaxyline.lua
+luafile $HOME/.config/nvim/lua/plugins/galaxyline.lua
 "luafile $HOME/.config/nvim/lua/plugins/eviline.lua
 "lua require'onedark'.setup {}
 
