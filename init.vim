@@ -9,6 +9,7 @@ source $HOME/.config/nvim/plug-config/indentLine.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/vim-notes.vim
 source $HOME/.config/nvim/plug-config/undo.vim
+source $HOME/.config/nvim/plug-config/vimwiki.vim
 
 " General
 source $HOME/.config/nvim/general/settings.vim
@@ -26,9 +27,11 @@ luafile $HOME/.config/nvim/lua/plugins/nvim-tree.lua
 luafile $HOME/.config/nvim/lua/plugins/gitsigns.lua
 luafile $HOME/.config/nvim/lua/plugins/nv-telescope.lua
 luafile $HOME/.config/nvim/lua/plugins/dashboard.lua
-"luafile $HOME/.config/nvim/lua/plugins/lualine.lua
-
 luafile $HOME/.config/nvim/lua/plugins/galaxyline.lua
+luafile $HOME/.config/nvim/lua/plugins/floaterm.lua
+luafile $HOME/.config/nvim/lua/plugins/hop.lua
+
+"luafile $HOME/.config/nvim/lua/plugins/lualine.lua
 "luafile $HOME/.config/nvim/lua/plugins/eviline.lua
 "lua require'onedark'.setup {}
 

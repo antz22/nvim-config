@@ -3,9 +3,9 @@
 --}
 require('lualine').setup{
     options = {
-      theme = 'gruvbox',
-      section_separators = {'', ''},
-      component_separators = {'', ''},
+      theme = 'onedark',
+      --section_separators = {'', ''},
+      --component_separators = {'', ''},
       icons_enabled = true,
     },
     sections = {

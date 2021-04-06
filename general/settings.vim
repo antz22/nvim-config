@@ -4,7 +4,7 @@ let g:mapleader = "\<Space>"
 syntax enable                           " Enables syntax highlighing
 
 
-set nu rnu
+"set nu rnu
 set colorcolumn=99999                   " For indentblankline plugin, quick fix to get rid of blank space highlighting
 set noshowmode
 
@@ -41,5 +41,17 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 "set autochdir                           " Your working directory will always be the same as your working directory
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o " disable newline comments
+
+"augroup neovim_terminal
+    "autocmd!
+    "" Enter Terminal-mode (insert) automatically
+    "autocmd TermOpen * startinsert
+    "" Disables number lines on terminal buffers
+    "autocmd TermOpen * :set nonumber norelativenumber
+    "" allows you to use Ctrl-c on terminal window
+    "autocmd TermOpen * nnoremap <buffer> <C-c> i<C-c>
+"augroup END
+au BufEnter term://* setlocal nonumber  " hide line numbers in terminal windows
+
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 

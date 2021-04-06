@@ -17,6 +17,7 @@
   //"python.linting.pylintArgs": [
       //"--load-plugins=pylint_django",
       //"--load-plugins=pylint_django.checkers.migrations",
+      //"pylint_django",
       //"--errors-only" ],
   // explorer
   "explorer.width": 30,

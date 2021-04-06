@@ -2,7 +2,8 @@ local gl = require('galaxyline')
 -- get my theme in galaxyline repo
 --local colors = require('galaxyline.theme').default
 local colors = {
-    bg = '#2E2E2E',
+    --bg = '#2E2E2E',
+    bg = '#282C34',
     yellow = '#DCDCAA',
     dark_yellow = '#D7BA7D',
     cyan = '#4EC9B0',
@@ -106,6 +107,7 @@ gls.left[6] = {
         highlight = {colors.red, colors.bg}
     }
 }
+-- hello!
 
 --gls.right[1] = {
     --DiagnosticError = {provider = 'DiagnosticError', icon = '  ', highlight = {colors.error_red, colors.bg}}

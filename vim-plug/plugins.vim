@@ -33,6 +33,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Fonts and icons
     Plug 'ryanoasis/vim-devicons'
+    Plug 'kyazdani42/nvim-web-devicons'
 
     " Colorizer
     Plug 'norcalli/nvim-colorizer.lua' 
@@ -44,7 +45,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Status line + tabs
     Plug 'romgrk/barbar.nvim'
     Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
-
     "Plug 'hoob3rt/lualine.nvim'
 
 
@@ -88,7 +88,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " File Explorer
     Plug 'scrooloose/NERDTree'
     Plug 'kyazdani42/nvim-tree.lua'
-    Plug 'kyazdani42/nvim-web-devicons'
 
     Plug 'lukas-reineke/indent-blankline.nvim', {'branch': 'lua'}
     Plug 'nvim-lua/plenary.nvim'
@@ -96,6 +95,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Undo Tree
     Plug 'mbbill/undotree'
+
+    " terminal
+    Plug 'voldikss/vim-floaterm'
+
+    " Easy motion
+    Plug 'phaazon/hop.nvim'
 
 
 call plug#end()

@@ -69,6 +69,10 @@ vim.g.nvim_tree_icons = {
     }
 }
 
+vim.cmd("hi NvimTreeFolderIcon guifg = #61afef")
+vim.cmd("hi NvimTreeFolderName guifg = #61afef")
+vim.cmd("hi NvimTreeIndentMarker guifg=#545862")
+
 --vim.cmd('set termguicolors') " this variable must be enabled for colors to be applied properly
 vim.o.termguicolors = true 
 --" a list of groups can be found at `:help nvim_tree_highlight`
