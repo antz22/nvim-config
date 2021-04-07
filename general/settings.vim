@@ -42,6 +42,9 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o " disable newline comments
 
+"set guifont=DejaVu\ Sans\ Mono:h13
+set guifont=Consolas:h13
+
 "augroup neovim_terminal
     "autocmd!
     "" Enter Terminal-mode (insert) automatically

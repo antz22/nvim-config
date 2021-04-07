@@ -1,12 +1,12 @@
 " auto-install vim-plug
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+if empty(glob('~/Appdata/Local/nvim/autoload/plug.vim'))
+  silent !curl -fLo ~/Appdata/Local/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   "autocmd VimEnter * PlugInstall
   "autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
-call plug#begin('~/.config/nvim/autoload/plugged')
+call plug#begin('~/Appdata/Local/nvim/autoload/plugged')
 
     """" Highlighting and syntax 
 
@@ -63,8 +63,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     """" Productivity 
 
     " Fuzzy file finding
-    "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    "Plug 'junegunn/fzf.vim'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
     " Telescope
     Plug 'nvim-lua/popup.nvim'
