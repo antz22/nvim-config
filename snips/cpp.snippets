@@ -34,7 +34,7 @@ int main() {
 
 endsnippet
 
-snippet io1 "Bits with fastio" b
+snippet fio "Bits with fastio" b
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -47,6 +47,28 @@ int main() {
 	cin.tie(0);
 
 	solve();
+}
+
+endsnippet
+
+snippet ffio "Bits with fastio and t--" b
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve() {
+	$0
+}
+
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+
+  int t; cin >> t;
+
+	while (t--) {
+	  solve();
+	}
+
 }
 
 endsnippet
@@ -80,9 +102,26 @@ int main() {
 }
 endsnippet
 
+snippet mac "Define some macros" b
+#define ll long long
+#define ar array
+endsnippet
+
 snippet fri "For loop" b
 for (int i=0; i<n; i++) {
 	$0
+}
+endsnippet
+
+snippet frj "For loop" b
+for (int j=0; j<n; j++) {
+	$0
+}
+endsnippet
+
+snippet fra "For loop" b
+for (int i=0; i<${1:n}; i++) {
+	${2}
 }
 endsnippet
 
@@ -92,7 +131,6 @@ for (int ${1:i}=0; $1<${2:n}; $1++) {
 }
 endsnippet
 
-endsnippet
 
 snippet frmi "Minimal for loop" b
 for (int ${1:i}=0; $1<${2:n}; $1++)	${4}

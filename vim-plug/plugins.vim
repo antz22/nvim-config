@@ -13,6 +13,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+    Plug 'windwp/nvim-ts-autotag'
+    " Javascript frameworks and web dev
+    Plug 'posva/vim-vue'
+    Plug 'rodrigore/coc-tailwind-intellisense', {'do': 'npm install'}
 
     " Treesitter for Java
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
@@ -20,6 +24,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     """" Themes
 
     Plug 'joshdick/onedark.vim'
+    Plug 'folke/tokyonight.nvim'
+    "Plug 'norcalli/nvim-base16.lua'
     "Plug 'vim-airline/vim-airline'
     "Plug 'vim-airline/vim-airline-themes'
 
@@ -44,6 +50,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Status line + tabs
     Plug 'romgrk/barbar.nvim'
+    "Plug 'akinsho/nvim-bufferline.lua'
     Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
     "Plug 'hoob3rt/lualine.nvim'
 
@@ -86,7 +93,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " HTML
     Plug 'mattn/emmet-vim' 
     " File Explorer
-    Plug 'scrooloose/NERDTree'
+    "Plug 'scrooloose/NERDTree'
     Plug 'kyazdani42/nvim-tree.lua'
 
     Plug 'lukas-reineke/indent-blankline.nvim', {'branch': 'lua'}
@@ -102,5 +109,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Easy motion
     Plug 'phaazon/hop.nvim'
 
+    " Vim surround
+    Plug  'tpope/vim-surround'
+
+    " Markdown preview
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 call plug#end()

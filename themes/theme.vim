@@ -4,7 +4,7 @@
 "hi Comment cterm=italic
 syntax on
 colorscheme onedark
-" options: ayu, gruvbox, jellybeans, onedark
+" options: ayu, gruvbox, jellybeans, onedark, tokyonight
 " monokai, material
 
 
@@ -17,6 +17,7 @@ endif
 
 " ---------MATERIAL-------
 "let g:material_theme_style = 'default' | 'palenight' | 'ocean' | 'lighter' | 'darker' 
+"let g:material_theme_style = 'darker' 
 
 
 
