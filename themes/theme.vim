@@ -3,7 +3,7 @@
 
 "hi Comment cterm=italic
 syntax on
-colorscheme onedark
+colorscheme tokyonight
 " options: ayu, gruvbox, jellybeans, onedark, tokyonight
 " monokai, material
 
@@ -19,7 +19,9 @@ endif
 "let g:material_theme_style = 'default' | 'palenight' | 'ocean' | 'lighter' | 'darker' 
 "let g:material_theme_style = 'darker' 
 
-
+" --------TOKYONIGHT------
+let g:tokyonight_style = "night"
+" storm, night, day
 
 
 " ----------GRUVBOX-------

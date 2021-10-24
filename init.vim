@@ -1,4 +1,3 @@
-
 if exists('g:vscode')
     source $HOME/.config/nvim/vscode/settings.vim
 else
@@ -27,7 +26,7 @@ else
 
     " Misc
     luafile $HOME/.config/nvim/lua/plugins/plug-colorizer.lua
-    luafile $HOME/.config/nvim/lua/plugins/nvim-tree.lua
+    "luafile $HOME/.config/nvim/lua/plugins/nvim-tree.lua
     luafile $HOME/.config/nvim/lua/plugins/gitsigns.lua
     luafile $HOME/.config/nvim/lua/plugins/nv-telescope.lua
     luafile $HOME/.config/nvim/lua/plugins/dashboard.lua

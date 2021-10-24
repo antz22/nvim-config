@@ -98,6 +98,9 @@ nnoremap <A-l> loadview
 nmap <Leader>ss :<C-u>SessionSave<CR>
 nmap <Leader>sl :<C-u>SessionLoad<CR>
 
+" Reading in templates
+nmap <Leader>te :read ~/CP/template.cpp<cr>
+
 augroup compileandrun
   autocmd!
   autocmd filetype python nnoremap <f5> :w <cr> :vsplit <cr> :term python3 % <cr>

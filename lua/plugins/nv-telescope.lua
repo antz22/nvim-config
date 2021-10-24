@@ -4,7 +4,7 @@ local actions = require('telescope.actions')
 -- '--color=never',
 --require('telescope').load_extension('media_files')
 require('telescope').setup {
-    defaults = {
+    layout_config = {
         vimgrep_arguments = {'rg', '--no-heading', '--with-filename', '--line-number', '--column', '--smart-case'},
         prompt_position = "top",
         prompt_prefix = " ",
